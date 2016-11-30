@@ -1,0 +1,31 @@
+Jose Torres
+CSE 330
+-----
+1.Name of algorithm 
+Towers of Hanoi
+O(2^N)
+
+Theoretical O() function
+2^n-1
+
+2. Comparison of theoretical O() and measured time = F(N)
+
+F(20) = .008 
+F(21) = .014
+F(22) = .022
+
+3.Description of how how you measured time. Describe how
+   much variation there was between different runs for same N.
+Testing 21 disks using time ./a.out
+	
+	1st run|2nd run|3rd run
+Real	.045s	.043s	.042s
+User	.016s	.015s	.012s
+System	.000s	.001s	.002s
+
+The program was tested using time. The average of the 3 runs was .014s. The variations were not that far apart. The highest value was .016s while the lowest was .012s. 
+
+4. Conclusion  (does theoretical O() match measured F()?
+   if it doesn't, speculate why not).
+In the theory for every increment of N the time should double. From F(20) to F(21) the time nearly doubled. From F(21) to F(22) it ran a little faster then expected. Clearly from F(20) to F(21) one can see the results do double matching with the theory. 
+

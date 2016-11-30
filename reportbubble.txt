@@ -1,0 +1,28 @@
+Jose Torres
+CSE 330
+-----
+1.Name of algorithm & Theoretical O() function
+Bubble Sort
+O(N^2)
+
+2. Comparison of theoretical O() and measured time = F(N)
+
+F(5000) = .080s
+F(10000) = .326s
+F(20000) = .1.349s
+
+3.Description of how how you measured time. Describe how
+   much variation there was between different runs for same N.
+Testing N = 5000 using time ./a.out
+	
+	1st run|2nd run|3rd run
+Real	.123s	.132s	.131s
+User	.082s	.078s	.080s
+System	.002s	.002s	.001s
+
+The program was tested using time. The average of the 3 runs was .080s. The variations were not that far apart. The highest value was .082s while the lowest was .078s. 
+
+4. Conclusion  (does theoretical O() match measured F()?
+  
+In the theory for every increment of 1000 the time should double. From F(5000) to F(10000) the time increased by 4x. From F(10000) to F(20000) it ran a little more then expected but ran close. Clearly from F(20) to F(21) one can see the results do increase 10x matching with the theory. 
+
